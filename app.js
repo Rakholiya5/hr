@@ -20,5 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/recipes', recipeRouter);
 
+app.listen(3000, ()=>{
+  console.log(`Running on port: 3000`);
+})
 
 module.exports = app;
